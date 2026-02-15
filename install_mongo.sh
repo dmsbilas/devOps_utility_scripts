@@ -16,8 +16,7 @@ curl -fsSL https://www.mongodb.org/static/pgp/server-8.0.asc \
 echo "✅ GPG key added."
 
 echo "📦 Adding MongoDB repository..."
-echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg ] https://repo.mongodb.org/apt/ubuntu noble/mongodb-org/8.2 multiverse" \
-  | sudo tee /etc/apt/sources.list.d/mongodb-org-8.2.list > /dev/null
+echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg ] https://repo.mongodb.org/apt/ubuntu noble/mongodb-org/8.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-8.2.list
 
 echo "✅ Repository added."
 
